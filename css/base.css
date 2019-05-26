@@ -1,0 +1,67 @@
+/* Fonts
+================================================================ */
+@font-face 
+{
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Light.woff2') format('woff2'),
+         url('../fonts/RobotoSlab-Light.woff')  format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+         url('../fonts/RobotoSlab-Regular.woff')  format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+         url('../fonts/RobotoSlab-Bold.woff')  format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Overrides
+================================================================ */
+*
+{
+    box-sizing: border-box;
+}
+
+a.text-link
+{
+    text-decoration: none;
+    color: #7a583d;
+    border-bottom: 2px solid #7a583d;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+a.text-link:hover
+{
+    background-color: #7a583d40;
+}
+
+body
+{
+    font-family: 'Roboto Slab';
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+.container
+{
+    height: 100%;
+    width: 1024px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
