@@ -2,11 +2,8 @@ nav.navbar
 {
     margin-top: 6rem;
     margin-bottom: 6rem;
-    /* background-color: #dddddd; */
     width: 100%;
     height: 6rem;
-
-    color: #222222;
 }
 
 .logotype
@@ -20,25 +17,118 @@ nav.navbar
     border-radius: 100%;
 }
 
+.nav-list
+{
+    float: right;
+    margin: 0;
+    margin-top: 35px;
+    padding: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.125em;
+    width: 550px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list li a
+{
+    text-decoration: none;
+    color: inherit;
+    color: #7a583d;
+    border-bottom: 2px solid #7a583d00;
+    transition-property: border;
+    transition-duration: 0.2s;
+    float: left;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nav-list li a:hover
+{
+    border-color: #7a583d;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: relative;
+    z-index: 5;
+    top: 0.25em;
+}
+
+.dropdown-content li a
+{
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+.hamburger-menu
+{
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    nav.navbar
+    {
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        height: 3.5rem;
+    }
+
+    .hamburger-menu
+    {
+        z-index: 5;
+        display: flex;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding: 0.25em;
+        width: 2.5rem;
+        height: 2.5rem;
+        float: right;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hamburger-menu span
+    {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: #444444;
+        border-radius: 1em;
+    }
+
+    .logotype
+    {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 100%;
+    }
+
+    .nav-list
+    {
+        display: none;
+    }
+}
+
 main
 {
     width: 100%;
-    /* background-color: #dddddd; */
 }
 
 header
 {
     margin-bottom: 6rem;
-}
-
-header h1
-{
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin: 0;
-}
-
-header h1 b
-{
-    font-weight: normal;
 }

@@ -27,13 +27,52 @@
     font-style: normal;
 }
 
-/* Overrides
+/* Base styling
 ================================================================ */
 *
 {
     box-sizing: border-box;
 }
 
+ul, ol
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+body
+{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+/* Heading styles
+================================================================ */
+header h1
+{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+header h1 b
+{
+    font-weight: normal;
+}
+
+@media (max-width: 767px)
+{
+    header h1
+    {
+        font-size: 1.25rem;
+    }
+}
+
+/* Link styles
+================================================================ */
 a.text-link
 {
     text-decoration: none;
@@ -48,20 +87,36 @@ a.text-link:hover
     background-color: #7a583d40;
 }
 
-body
-{
-    font-family: 'Roboto Slab';
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #222222;
-}
-
+/* Container
+================================================================ */
 .container
 {
     height: 100%;
-    width: 1024px;
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
+}
+
+@media (max-width: 767px)
+{
+    .container
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    } 
+}
+
+@media (min-width: 768px)
+{
+    .container { width: 718px; }
+}
+
+@media (min-width: 1000px)
+{
+    .container { width: 950px; }
+}
+
+@media (min-width: 1200px)
+{
+    .container { width: 1150px; }
 }
