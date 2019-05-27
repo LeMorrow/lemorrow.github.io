@@ -95,7 +95,7 @@ nav.navbar
 
     .hamburger-menu
     {
-        z-index: 5;
+        cursor: pointer;
         display: flex;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
