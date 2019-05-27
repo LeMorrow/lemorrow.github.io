@@ -50,12 +50,22 @@ nav.navbar
     border-color: #7a583d;
 }
 
+.dropdown
+{
+    position: relative;
+}
+
 .dropdown-content
 {
+    background-color: #f5f5f5;
+    border: 1px solid #7a583d;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 5;
-    top: 0.25em;
+    top: 1.4em;
 }
 
 .dropdown-content li a
